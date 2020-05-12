@@ -1,0 +1,20 @@
+input {
+  font: 400 15px system-ui !important;
+}
+
+i {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.input {
+  &__sort-field {
+    border: 1px solid #a6a6a6;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    min-width: 12.5em;
+    height: 31px;
+  }
+}

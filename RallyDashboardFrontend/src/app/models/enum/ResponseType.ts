@@ -1,0 +1,6 @@
+export enum ResponseType {
+  WARNING = 'WARNING',
+  ERROR = 'ERROR',
+  SUCCESS = 'SUCCESS',
+  VALIDATION_ERROR = 'VALIDATION_ERROR'
+}

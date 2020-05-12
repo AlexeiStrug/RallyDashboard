@@ -1,0 +1,29 @@
+$ff: GeFontInspRegular;
+$size: 30px;
+$txt-align: center;
+$va: middle;
+
+:host {
+  ::ng-deep .ui-card-body {
+    padding: 0em !important;
+  }
+}
+
+div {
+  text-align: $txt-align;
+
+  img {
+    vertical-align: $va;
+    width: $size * 2;
+    height: $size * 2;
+  }
+
+  span {
+    font: {
+      family: $ff;
+      size: $size;
+    }
+    vertical-align: -webkit-baseline-middle;
+  }
+}
+

@@ -1,0 +1,15 @@
+<p-tabView>
+  <p-tabPanel [header]="project.key" *ngFor="let project of mapOfProject | keyvalue; let i = index" [selected]="i == 0">
+    <p-tabView>
+      <p-tabPanel header="Sprint">
+        <app-sprint-calculation [project]="project"></app-sprint-calculation>
+      </p-tabPanel>
+      <p-tabPanel header="Release">
+        <app-release-calculation [project]="project"></app-release-calculation>
+      </p-tabPanel>
+      <p-tabPanel header="Remain">
+        <app-remain-usp-calculation [project]="project"></app-remain-usp-calculation>
+      </p-tabPanel>
+    </p-tabView>
+  </p-tabPanel>
+</p-tabView>

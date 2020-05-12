@@ -1,0 +1,48 @@
+<app-shared-table [headerData]="cols" [tableData]="dashboard" [tableName]="sprintTableName + ' for ' + projectName"></app-shared-table>
+
+<!--<h3>Sprint Calculations</h3>-->
+<!--<p-table #dt [columns]="selectedColumns" [value]="dummyDashboards" [paginator]="true" [rows]="10">-->
+
+<!--  <ng-template pTemplate="caption">-->
+<!--    <div class="p-grid">-->
+<!--      <div class="p-col-2" style="text-align:left">-->
+<!--        <p-multiSelect [options]="cols" [(ngModel)]="selectedColumns" optionLabel="header"-->
+<!--                       selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns"></p-multiSelect>-->
+<!--      </div>-->
+<!--      <div class="p-col-2 p-offset-8" style="align-self: center;">-->
+<!--        &lt;!&ndash;                      <i class="pi pi-search"></i>&ndash;&gt;-->
+<!--        <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:100%; height: 20px; vertical-align: middle;">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template pTemplate="header" let-columns>-->
+<!--    <tr>-->
+<!--      <th *ngFor="let col of columns" [pSortableColumn]="col.field">-->
+<!--        {{col.header}}-->
+<!--        <p-sortIcon [field]="col.field" ariaLabel="Activate to sort" ariaLabelDesc="Activate to sort in descending order" ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>-->
+<!--      </th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <th *ngFor="let col of columns" [ngSwitch]="col.field">-->
+<!--        <input *ngSwitchCase="'id'" pInputText type="number" (input)="dt.filter($event.target.value, col.field, 'contains')" class="input__sort-field">-->
+<!--        <input *ngSwitchCase="'iteration'" pInputText type="text" (input)="dt.filter($event.target.value, col.field, 'contains')" class="input__sort-field">-->
+<!--        <p-dropdown *ngSwitchCase="'type'" [options]="types" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value, col.field, 'equals')"></p-dropdown>-->
+<!--        <div *ngSwitchCase="'storyPoint'">-->
+<!--          Value > {{storyPointFilter}}-->
+<!--          <i class="pi pi-times" (click)="storyPointFilter=null;dt.filter(null, col.field, col.filterMatchMode)" *ngIf="storyPointFilter"></i>-->
+<!--          <p-slider [style]="{'width':'100%','margin-top':'8px'}" [(ngModel)]="storyPointFilter" [min]="0" [max]="100" (onChange)="onStoryPointChange($event, dt)"></p-slider>-->
+<!--        </div>-->
+<!--      </th>-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template pTemplate="body" let-dashboard let-columns="columns">-->
+<!--    <tr>-->
+<!--      <td *ngFor="let col of columns">-->
+<!--        {{dashboard[col.field]}}-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+
+<!--</p-table>-->

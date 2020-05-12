@@ -1,0 +1,40 @@
+<h3>{{tableName}}</h3>
+<p-table #dt [columns]="selectedColumns" [value]="tableData" [paginator]="true" [rows]="10">
+  <ng-template pTemplate="caption">
+    <div class="p-grid">
+      <div class="p-col-2" style="text-align:left">
+        <p-multiSelect [options]="headerData" [(ngModel)]="selectedColumns" optionLabel="header"
+                       selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns"></p-multiSelect>
+      </div>
+      <div class="p-col-2 p-offset-8" style="align-self: center;">
+        <!--                      <i class="pi pi-search"></i>-->
+        <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:100%; height: 20px; vertical-align: middle;">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+        {{col.header}}
+        <p-sortIcon [field]="col.field" ariaLabel="Activate to sort" ariaLabelDesc="Activate to sort in descending order" ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      <td *ngFor="let col of columns">
+        <div *ngIf="col.header === 'Release Date' || col.header === 'Release Start Date'; else noDate">
+          {{rowData[col.field] | date }}
+        </div>
+        <ng-template #noDate>
+          <div>
+            {{rowData[col.field]}}
+          </div>
+        </ng-template>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+
