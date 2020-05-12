@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eae35036-99a5-4d62-9f95-ea697fc61aba" name="Default Changelist" comment="Added schedule task for calculation.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/v002.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/DashboardApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/DashboardApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/controller/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/controller/dto/DashboardResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/controller/dto/ResponseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/DashboardEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/DashboardEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/UserStoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/UserStoryEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/enums/TypeOfQueryEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/enums/TypeOfQueryEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/enums/TypeOfRequestEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/model/enums/TypeOfRequestEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/repository/DashboardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/repository/DashboardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/UserStoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/UserStoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequestFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequestFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/HandleDataByRequestFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetIterationsWithProjectName.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetIterationsWithProjectName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointFromBacklog.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointFromBacklog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointPerIterationList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointPerIterationList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointPerIterationMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointPerIterationMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/impl/UserStoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/service/impl/UserStoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/utils/DashboardEntitiesResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/utils/config/rally/RallyApiConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ge/dashboard/utils/config/rally/RallyApiConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/dashboard-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/dashboard-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/db/changelog/v001.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/changelog/v001.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="221" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dashboard" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dashboard" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RallyDashboardMetrics" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XLhZJSnePYV9KFpAyqvUhqEUuh" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="1fcd93c7-bf2f-47ce-9214-98af682dc977" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21241258" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ge.dashboard.utils.exception" />
+      <recent name="com.ge.dashboard.service.factory.handleData.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/changelog" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.ge.dashboard.model.temp" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/messages" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DashboardApplicationWithProxy">
+    <configuration name="RallyDashboardMetrics [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RallyDashboardMetrics [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildNeeded" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RallyDashboardMetrics [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RallyDashboardMetrics [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RallyDashboardMetrics [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dashboard.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ge.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ge.dashboard.DashboardApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApplicationWithProxy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dashboard.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ge.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ge.dashboard.DashboardApplication" />
+      <option name="ACTIVE_PROFILES" value="proxy" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.RallyDashboardMetrics [clean]" />
+      <item itemvalue="Gradle.RallyDashboardMetrics [buildDependents]" />
+      <item itemvalue="Gradle.RallyDashboardMetrics [buildNeeded]" />
+      <item itemvalue="Gradle.RallyDashboardMetrics [dependencies]" />
+      <item itemvalue="Gradle.RallyDashboardMetrics [build]" />
+      <item itemvalue="Spring Boot.DashboardApplicationWithProxy" />
+      <item itemvalue="Spring Boot.DashboardApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.RallyDashboardMetrics [clean]" />
+        <item itemvalue="Gradle.RallyDashboardMetrics [build]" />
+        <item itemvalue="Gradle.RallyDashboardMetrics [dependencies]" />
+        <item itemvalue="Gradle.RallyDashboardMetrics [buildDependents]" />
+        <item itemvalue="Gradle.RallyDashboardMetrics [buildNeeded]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ca4cec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ca4cec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@14c39046" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ca4cec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@66aca152" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eae35036-99a5-4d62-9f95-ea697fc61aba" name="Default Changelist" comment="" />
+      <created>1580831335460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580831335460</updated>
+      <workItem from="1580831340509" duration="13557000" />
+      <workItem from="1581086359693" duration="11229000" />
+      <workItem from="1581583617721" duration="6106000" />
+      <workItem from="1581601748051" duration="628000" />
+      <workItem from="1581603002873" duration="22227000" />
+      <workItem from="1582891419445" duration="568000" />
+      <workItem from="1582892158530" duration="492000" />
+      <workItem from="1582892988257" duration="13561000" />
+      <workItem from="1583068216032" duration="11527000" />
+      <workItem from="1583143638475" duration="13003000" />
+      <workItem from="1583225963200" duration="2349000" />
+      <workItem from="1583233630353" duration="7287000" />
+      <workItem from="1584344173897" duration="19000" />
+      <workItem from="1589288505958" duration="1349000" />
+    </task>
+    <task id="LOCAL-00001" summary="added message_bundle, added new field for DB -&gt; story_point, changed error message for getting data.">
+      <created>1580835051611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580835051612</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removed some comments.">
+      <created>1580837727258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580837727259</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added additional loggers with error and warn type, added validation for null value.">
+      <created>1580904324171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580904324171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added schedule task for calculation.">
+      <created>1580978211150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580978211150</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added throw exception for null values, added logic for calculation remain USP">
+      <created>1581518229670</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581518229670</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed date from string to Date and changed tables in DB side to Date type.">
+      <created>1581588240815</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581588240815</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added logic for release delay calculation">
+      <created>1581674813567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674813567</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added schedule task for calculation of release delay.">
+      <created>1581676550443</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581676550443</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added .gitingore file">
+      <created>1581676695329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581676695329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added logger tracker, added a new method for saving all release if not exist in DB side">
+      <created>1581679193314</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581679193314</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added get controller for releases.">
+      <created>1581686628043</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581686628043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changed type of responseType from error to warning">
+      <created>1581686840746</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581686840746</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed issue with releases, changed logic for calculation, saving and updating releases to DB side">
+      <created>1582710140284</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582710140284</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added new Api key and 4 project, added new logic for project table, modified logic related to new table, added new type of calculation to factory Project, created dto response objects and related logic for them, changed names for variables, methods, classes and etc., changed CORS-filter, added new dependency to gradle project - modelmapper">
+      <created>1583161181718</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583161181718</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added additional repository for gradle">
+      <created>1583227127730</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583227127730</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added message_bundle, added new field for DB -&gt; story_point, changed error message for getting data." />
+    <MESSAGE value="removed some comments." />
+    <MESSAGE value="Added additional loggers with error and warn type, added validation for null value." />
+    <MESSAGE value="Added schedule task for calculation." />
+    <MESSAGE value="Added throw exception for null values, added logic for calculation remain USP" />
+    <MESSAGE value="Changed date from string to Date and changed tables in DB side to Date type." />
+    <MESSAGE value="Added logic for release delay calculation" />
+    <MESSAGE value="Added schedule task for calculation of release delay." />
+    <MESSAGE value="Added .gitingore file" />
+    <MESSAGE value="Added logger tracker, added a new method for saving all release if not exist in DB side" />
+    <MESSAGE value="Added get controller for releases." />
+    <MESSAGE value="Changed type of responseType from error to warning" />
+    <MESSAGE value="Fixed issue with releases, changed logic for calculation, saving and updating releases to DB side" />
+    <MESSAGE value="Added new Api key and 4 project, added new logic for project table, modified logic related to new table, added new type of calculation to factory Project, created dto response objects and related logic for them, changed names for variables, methods, classes and etc., changed CORS-filter, added new dependency to gradle project - modelmapper" />
+    <MESSAGE value="Added additional repository for gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional repository for gradle" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/utils/config/builder/DtoResponseBuilder.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/impl/UserStoryServiceImpl.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/utils/config/builder/DtoResponseBuilder.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/utils/config/builder/DtoResponseBuilder.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/impl/UserStoryServiceImpl.java</url>
+          <line>350</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/impl/UserStoryServiceImpl.java</url>
+          <line>351</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/impl/UserStoryServiceImpl.java</url>
+          <line>352</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/factory/handleData/impl/GetProjectName.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/factory/handleData/HandleDataByRequestFactory.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/controller/RallyRestController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/impl/UserStoryServiceImpl.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/service/factory/handleData/impl/GetStoryPointFromBacklog.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ge/dashboard/controller/RallyRestController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dashboard$RallyDashboardMetrics__dependencies_.ic" NAME="RallyDashboardMetrics [dependencies] Coverage Results" MODIFIED="1583144678940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RallyDashboardMetrics$DashboardApplication.ic" NAME="DashboardApplication Coverage Results" MODIFIED="1580833371201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ge.dashboard.*</FILTER>
+    </SUITE>
+  </component>
+</project>
