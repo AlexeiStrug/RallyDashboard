@@ -11,12 +11,6 @@ This project was generated with:
    - Postgresql
    - rally-rest-api:2.2.1
 ```
-And used 2 profiles
-```bash
-   - proxy
-   - noproxy
-```
-For running application in GE network, please, use proxy profile in configuration.
 
 # User Guide for Rally-api
 
